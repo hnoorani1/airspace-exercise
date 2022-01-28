@@ -30,8 +30,9 @@ describe('Negative and Postive login tests', () => {
         cy.get('[id="username"]').type(users.validCredentials.email);
         cy.get('[id="password"]').type(users.validCredentials.password);
         cy.get('[class*="fa fa-2x fa-sign-in"]').click();
-        cy.get('[class*="flash success').should("contain", 'You logged into a secure area!')
+        cy.get('[class*="flash success"]').should("contain", 'You logged into a secure area!')
         cy.get('[class*="icon-2x icon-signout"]').should("contain", ' Logout').click()
+        cy.get('[class*="flash success"]').should("contain", 'You logged out of the secure area!')
     })
 
     it('Invalid username and valid password', () => {
