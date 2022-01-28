@@ -1,0 +1,14 @@
+{
+  "validCredentials": {
+    "email": "tomsmith",
+    "password": "SuperSecretPassword!"
+  },
+  "invalidCredentials": {
+    "email": "invaliduser@test.com",
+    "password": "badpassword"
+  },
+  "specialCharacterCredentials": {
+    "email": "invalid!@#$%",
+    "password": "Test1234!@#"
+  }
+}
