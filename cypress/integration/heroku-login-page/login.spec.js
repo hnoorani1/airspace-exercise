@@ -62,13 +62,5 @@ describe('Negative and Postive login tests', () => {
         cy.get('[id="flash-messages"]').should("contain", 'Your username is invalid!')
     })
 
-    it('Authenticate and Logout', () => {
-        cy.get('[id="username"]').type(users.specialCharacterCredentials.email);
-        cy.get('[id="password"]').type(users.specialCharacterCredentials.password);
-        cy.get('[class*="fa fa-2x fa-sign-in"]').click();
-        cy.get('[id="flash-messages"]').should("contain", 'Your username is invalid!')
-    })
-
     // TODO: Authenticate via API (create a cypress command) and then get to the homepage
-
 })
